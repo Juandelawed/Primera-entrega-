@@ -1,17 +1,24 @@
 body {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 30px;
+  background: #F0F3F4;
+  color: #212F3D;
+}
+body header {
+  text-align: center;
+  background-color: #A6ACAF;
 }
 body header nav {
-  justify-content: space-between;
+  text-decoration: none;
 }
 body header nav .logo {
   font-size: 1.5rem;
   font-weight: 700;
+  margin: 0;
 }
 body header nav a {
-  text-decoration: none;
+  margin-left: 55%;
 }
 body header img {
   width: 490px;
@@ -22,9 +29,9 @@ body header span {
 }
 body main article {
   display: flex;
+  flex: 1;
 }
 body main article section {
-  flex: 1;
   margin: 10px;
 }
 body main article section figure {
