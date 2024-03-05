@@ -7,9 +7,9 @@ body {
 }
 body header {
   text-align: center;
-  background-color: #A6ACAF;
 }
 body header nav {
+  background-color: #A6ACAF;
   text-decoration: none;
 }
 body header nav .logo {
@@ -19,6 +19,7 @@ body header nav .logo {
 }
 body header nav a {
   margin-left: 55%;
+  text-decoration: none;
 }
 body header img {
   width: 490px;
