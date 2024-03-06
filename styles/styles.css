@@ -10,7 +10,7 @@ body header {
   left: 0;
   width: 100%;
   padding: 12px 120px;
-  background: #000;
+  background: rgba(31, 29, 29, 0.3490196078);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,8 +27,11 @@ body header nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 35px;
-  transition: 3s;
+  margin-left: 45px;
+  transition: 0.001s;
+}
+body header nav a:hover {
+  color: #579eb9;
 }
 body main article {
   margin-top: 0;
@@ -55,12 +58,51 @@ body main article section figure img {
   width: 575px;
 }
 body footer {
-  min-height: 25vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #1d222b;
-  font-size: 35px;
+  font-size: 15px;
   font-weight: 300;
   color: #fff;
+}
+body footer article section ul {
+  margin-left: 6px;
+  height: 50px;
+  line-height: 60px;
+  overflow: hidden;
+}
+body footer article section ul li {
+  color: #fc6d6d;
+  list-style: none;
+  font-size: 40px;
+  font-weight: 500;
+  animation: slide 20s steps(6) infinite;
+  position: relative;
+  top: 0;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+body footer article section ul li span {
+  position: relative;
+}
+body footer article section ul li span::after {
+  background: #1d222b;
+  left: 0;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 2s steps(60) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
 }/*# sourceMappingURL=styles.css.map */

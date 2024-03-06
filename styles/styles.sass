@@ -10,7 +10,7 @@ body
         left: 0
         width: 100%
         padding: 12px 120px
-        background: #000
+        background: #1f1d1d59
         display: flex
         justify-content: space-between
         align-items: center
@@ -26,8 +26,11 @@ body
                 color: #fff
                 text-decoration: none
                 font-weight: 500
-                margin-left: 35px
-                transition: 3s
+                margin-left: 45px
+                transition: 0.001s
+                &:hover
+                    color: #579eb9 
+            
     main
         article
             margin-top: 0
@@ -50,27 +53,59 @@ body
                     img
                        width: 575px
                         
-                    figcaption 
-                        
-                            
-                        
-                    
-
-            
+                    figcaption       
     footer
-        min-height: 25vh
+        min-height: 100vh
         display: flex
         justify-content: center
         align-items: center
         background: #1d222b
-        font-size: 35px 
+        font-size: 15px 
         font-weight: 300
         color: #fff
+        article
+            section
+                ul
+                    margin-left: 6px
+                    height: 50px
+                    line-height: 60px
+                    overflow: hidden
+                    
+                    li
+                        color: #fc6d6d
+                        list-style: none
+                        font-size: 40px
+                        font-weight: 500
+                        animation: slide 20s steps(6) infinite
+                        position: relative
+                        top: 0
+                        @keyframes slide
+                            0%
+                                
+                            100%
+                                top: -360px
+                        span
+                            position: relative
+                            &::after
+                                background: #1d222b
+                                left: 0
+                                content: ""
+                                position: absolute
+                                height: 100%
+                                width: 100%
+                                border-left: 2px solid #fc6d6d
+                                animation: typing 2s steps(60) infinite
+                                @keyframes typing
+                                    0%
+                                        
+                                    100%
+                                        left: 100%
+                                        margin: 0 -35px 0 35px                                        
+                        
+                            
+
                 
-
-
-            
-            
+        
 
     
 
